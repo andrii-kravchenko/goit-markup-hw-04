@@ -125,7 +125,7 @@ body {
     list-style: none;
     margin: 0, 0, 0, auto;
     align-items: center;
-    display: block;
+    display: flex;
     
         
 }
@@ -143,15 +143,15 @@ body {
 .button-icon {
 width: 16px; height: 12px;
 cursor: pointer;
-display: block;
-
-
+display: flex;
+align-items: center;
+margin-right: 10px;
 }
 
-.envelope-pointer:hover,
+/*.envelope-pointer:hover,
 .envelope-pointer:focus,
 .smart-phone-pointer:hover,
-.smart-phone-pointer:focus,
+.smart-phone-pointer:focus,*/
 .button:hover,
 .button:focus,
 .button-icon:hover,
@@ -213,11 +213,16 @@ background: white
 
 .header-address-list {
     margin-left: auto;
+    display: inline-flex;
+    justify-content: flex-end;
+    
 }
 
 .header-nav-item,
 .header-address-item {
     margin-right: 50px;
+    display: flex;
+    align-items: center;
     
 }
 
@@ -230,7 +235,9 @@ background: white
     display: flex;
 }
 */
-
+.header-mail-phone-wrapper {
+    display: inline;
+}
 .header-address-link {
 
     color: var(--header-footer-address-color);
@@ -247,6 +254,7 @@ background: white
     display: flex;
     align-items: center;
 }
+
 
 
 
@@ -368,6 +376,17 @@ background: white
 .benefits-list {
     display: flex;
     flex-wrap: wrap;
+}
+
+.benefits-icons {
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 .about-title,
@@ -668,6 +687,82 @@ margin-right: 0;
     display: block;
     padding: 32px 0 32px 0;
 }
+
+.our-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+.our-clients-list {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/*.our-clients-list-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}*/
+
+.our-clients-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+}
+
+.our-clients-company {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: block;
+
+    }
+
+.our-clients-company:hover,
+.our-clients-company:focus
+{
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    fill: #2196F3;
+    color: #2196F3;
+}
+
+.our-clients-company-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    fill: #AFB1B8;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+.our-clients-company-link:hover .company-icon,
+.company-icon:hover {
+    fill: #2196F3;
+}
+
+.company-icon {
+    
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    
+}
+
+
 
 .join-us-title {
     font-family: 'Roboto';
