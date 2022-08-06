@@ -141,9 +141,9 @@ body {
 }
 
 .button-icon {
-width: 16px; height: 12px;
+/*width: 10px; height: 16px;*/
 cursor: pointer;
-display: flex;
+/*display: flex;*/
 align-items: center;
 margin-right: 10px;
 }
@@ -452,8 +452,7 @@ background-color: #F5F4FA;
 }
 
 .team-and-portfolio-card {
-    padding-top: 30px;
-    padding-bottom: 16px;
+    padding: 30px 32px 30px 32px;
 }
 
 .team-text {
@@ -464,6 +463,7 @@ background-color: #F5F4FA;
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
     
 }
 
@@ -485,7 +485,7 @@ margin-right: 0;
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
 .team-social-link {
@@ -500,7 +500,8 @@ margin-right: 0;
     
 }
 
-.team-social-link:hover {
+.team-social-link:hover,
+.team-social-link:focus {
     background-color: var(--hover-focus-color);
     fill: var(--btn-hover-focus-color);
 }
@@ -634,6 +635,7 @@ margin-right: 0;
 .portfolio-item {
     min-width: 370;
     border: 1px, #EEEEEE;
+    display: flex;
     /*margin-right: 30px;
     margin-bottom: 30px;*/
 }
@@ -684,7 +686,9 @@ margin-right: 0;
 }
 
 .btn-padding-32 {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+
     padding: 32px 0 32px 0;
 }
 
@@ -702,13 +706,6 @@ margin-right: 0;
     gap: 30px;
 }
 
-/*.our-clients-list-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}*/
-
 .our-clients-title {
     font-family: 'Roboto';
     font-style: normal;
@@ -724,20 +721,20 @@ margin-right: 0;
 .our-clients-company {
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    display: block;
-
+    
+    
     }
 
-.our-clients-company:hover,
-.our-clients-company:focus
-{
+/*.our-clients-company:hover
+
+ {
     border: 1px solid #2196F3;
     border-radius: 4px;
     fill: #2196F3;
     color: #2196F3;
-}
+    
+}*/
+
 
 .our-clients-company-link {
     display: flex;
@@ -746,13 +743,27 @@ margin-right: 0;
     fill: #AFB1B8;
     align-items: center;
     justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 
     }
 
-.our-clients-company-link:hover .company-icon,
-.company-icon:hover {
+.our-clients-company-link:focus .company-icon,
+.our-clients-company-link:hover .company-icon {
+    
     fill: #2196F3;
+   
 }
+
+.our-clients-company-link:focus,
+.our-clients-company-link:hover {
+    
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+
+}
+
+
 
 .company-icon {
     
@@ -805,7 +816,8 @@ margin-right: 0;
     fill: var(--footer-logo-color)
 }
 
-.join-us-link:hover {
+.join-us-link:hover,
+.join-us-link:focus {
     background-color: var(--hover-focus-color);
 }
 
