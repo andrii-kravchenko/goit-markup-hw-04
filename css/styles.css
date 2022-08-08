@@ -155,11 +155,19 @@ margin-right: 10px;
 .button:hover,
 .button:focus,
 .button-icon:hover,
-.button-icon:focus {
+.button-icon:focus
+ {
     color: var(--hover-focus-color);
     fill: var(--hover-focus-color);
 
 } 
+.header-address-link-shadow:hover,
+.header-address-link-shadow:focus {
+    color: var(--hover-focus-color);
+    fill: var(--hover-focus-color);
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)
+
+}
 
 .smart-phone-pointer {
     padding-left: 30px;
